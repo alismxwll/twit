@@ -1,0 +1,6 @@
+<h1>All Twits</h1>
+
+<% @twits.each do |twit| %>
+  <%= twit.user.name %> says:
+  <li><%= twit.content %></li>
+<% end %>
