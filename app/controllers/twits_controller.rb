@@ -1,7 +1,7 @@
 class TwitsController < ApplicationController
   before_filter :authorize
 def index
-    @twits = Twit.all
+    @twits = Twit.all.order('created_at DESC').first(10)
   end
 
   def new

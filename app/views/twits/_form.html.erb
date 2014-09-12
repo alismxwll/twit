@@ -1,4 +1,4 @@
-<%= form_for @twit do |f| %>
+<%= form_for @twit, id: "twit_form", remote: true do |f| %>
   <p>Feed me your thoughts:</p>
   <%= f.text_area :content %><br>
   <%= f.submit "Twit!" %>

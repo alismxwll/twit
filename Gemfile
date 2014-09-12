@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bcrypt'
 gem 'textacular'
+gem 'bootstrap-sass', '~> 3.2.0'
 
 group :development do
   gem 'letter_opener'

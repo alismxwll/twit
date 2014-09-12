@@ -1,6 +1,8 @@
 <h1>All Twits</h1>
 
-<% @twits.each do |twit| %>
-  <%= twit.user.name %> says:
-  <li><%= twit.content %></li>
-<% end %>
+<ul id="twit">
+  <% @twits.each do |twit| %>
+    <li><%= link_to "#{twit.user.name}", user_path(twit.user_id) %> says:
+      <%= twit.content %></li><br>
+  <% end %>
+</ul>
